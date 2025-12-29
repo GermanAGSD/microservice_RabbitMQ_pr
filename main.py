@@ -19,6 +19,7 @@ async def make_order(name: str, event: str):
         data_json,
         queue="orders"
     )
+
     return {"data": "success"}
 
 @router.get("/product")
